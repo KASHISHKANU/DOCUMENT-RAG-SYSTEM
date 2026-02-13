@@ -43,9 +43,8 @@ Gemini LLM
      ↓
 Grounded Answer
 
-# 📂 Project Structure
-
-'''
+## 📁 Project Structure
+```
 rag-policy-assistant/
 │
 ├── dataset/
@@ -70,7 +69,7 @@ rag-policy-assistant/
 ├── .env
 ├── requirements.txt
 └── README.md
-'''
+```
 
 # ⚙️ Setup Instructions
 1️⃣ Clone Repository
@@ -187,16 +186,19 @@ Question	Type
 4. How long does delivery take?	Answerable
 
 # Evaluation Rubric
-Score	Meaning
-✅	 Accurate & grounded
-⚠️	  Partial / unanswerable handled correctly
-❌	 Weak or unclear
-
+```
+Score	     Meaning
+✅	      Accurate & grounded
+⚠️	      Partial / unanswerable handled correctly
+❌	      Weak or unclear
+```
+```
 Sample Results
 Question	            Accuracy	Hallucination Avoidance	  Clarity
 Refund policy	         ✅	                ✅	           ✅
 Cancellation	         ✅	                ✅	           ✅
-Insurance	              ⚠️	                 ✅	            ✅
+Insurance	             ⚠️	                ✅	           ✅
+```
 
 ⚠️ Edge Case Handling
 The system safely handles:
@@ -240,20 +242,20 @@ Prompt constraints significantly reduced hallucinations and improved grounding c
 
 🧠 Tech Stack
 
-# Core
+Core
 - Python
 
-# LLM
+LLM
 - Google Gemini (Gemini API) – Response generation
 
-# Retrieval & NLP
+Retrieval & NLP
 - SentenceTransformers (MiniLM) – Semantic embeddings
 - Cross-Encoder (MS MARCO MiniLM) – Reranking for retrieval precision
 - FAISS – Vector similarity search
 
-# Data Processing
+Data Processing
 - PyPDF – Policy document parsing
 - NumPy – Vector computation
 
-👨‍💻 Author
+# 👨‍💻 Author
 Mr Kashish Raj
