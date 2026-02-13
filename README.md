@@ -45,6 +45,7 @@ Grounded Answer
 
 # 📂 Project Structure
 
+'''
 rag-policy-assistant/
 │
 ├── dataset/
@@ -59,14 +60,17 @@ rag-policy-assistant/
 │   ├── embeddings.py
 │   ├── vector_store.py
 │   ├── retriever.py
+│   ├── reranker.py
 │   ├── prompts.py
 │   ├── rag_pipeline.py
 │   ├── evaluator.py
+│   ├── utils.py
 │   └── main.py
 │
 ├── .env
 ├── requirements.txt
 └── README.md
+'''
 
 # ⚙️ Setup Instructions
 1️⃣ Clone Repository
