@@ -1,8 +1,8 @@
-🚀 Policy Document RAG Assistant
+# 🚀 Policy Document RAG Assistant
 
 AI Engineer Intern – Take Home Assignment
 
-📌 Overview
+# 📌 Overview
 This project implements a Retrieval-Augmented Generation (RAG) based question-answering assistant that answers user queries using internal company policy documents.
 
 # The goal is to demonstrate:
@@ -13,7 +13,7 @@ This project implements a Retrieval-Augmented Generation (RAG) based question-an
 
 The assistant retrieves relevant policy information and generates answers strictly grounded in retrieved context.
 
-🎯 Problem Statement
+# 🎯 Problem Statement
 
 Given a set of company policy documents (Refund, Cancellation, Shipping policies), the system:
 Retrieves relevant information from documents
@@ -21,7 +21,7 @@ Generates accurate and grounded answers
 Avoids hallucinations
 Uses clear and structured prompts
 
-🧱 Architecture Overview
+# 🧱 Architecture Overview
 
 Policy PDFs
      ↓
@@ -43,7 +43,7 @@ Gemini LLM
      ↓
 Grounded Answer
 
-📂 Project Structure
+# 📂 Project Structure
 
 rag-policy-assistant/
 │
@@ -68,7 +68,7 @@ rag-policy-assistant/
 ├── requirements.txt
 └── README.md
 
-⚙️ Setup Instructions
+# ⚙️ Setup Instructions
 1️⃣ Clone Repository
 git clone <https://github.com/KASHISHKANU/DOCUMENT-RAG-SYSTEM>
 cd rag-policy-assistant
@@ -83,7 +83,7 @@ GEMINI_API_KEY=your_api_key_here
 4️⃣ Run the Project
 python src/main.py
 
-📄 Dataset & Data Preparation
+# 📄 Dataset & Data Preparation
 
 - Policy documents are stored as PDFs inside:
 dataset/
@@ -104,7 +104,7 @@ Fits within LLM context window
 
 This size provided a good balance between retrieval precision and contextual completeness.
 
-🧠 RAG Pipeline
+# 🧠 RAG Pipeline
 
 - Embeddings
 Model: all-MiniLM-L6-v2
@@ -134,10 +134,10 @@ Each (query, chunk) pair is scored using a cross-encoder.
 Chunks are reordered based on relevance scores.
 Only the highest-ranked chunks are passed to Gemini.
 
-✨ Prompt Engineering
+# ✨ Prompt Engineering
 Prompt engineering was treated as a core focus of this assignment.
 
-🟡 Initial Prompt (Version 1)
+# 🟡 Initial Prompt (Version 1)
 Answer using the provided context.
 
 Context:
@@ -151,7 +151,7 @@ Sometimes verbose
 No structure
 Weak hallucination control
 
-🟢 Improved Prompt (Final Version)
+# 🟢 Improved Prompt (Final Version)
 You are a strict company policy assistant.
 
 RULES:
